@@ -13,7 +13,6 @@ exports.getLogin = (req,res,next) => {
     res.render('auth/login', {
         pageTitle: 'Login',
         path: '/login',
-        isAuth: req.session.isLoggedIn,
         errorMessage: errMsg
     })
 }
