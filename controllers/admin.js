@@ -1,4 +1,5 @@
 const Product = require('../models/Products')
+const { validationResult } = require('express-validator')
 
 exports.getAddProduct = (req, res, next) => {
   res.render('admin/edit-product', {
